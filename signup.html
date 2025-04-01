@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Alumni Connect</title>
+    <link rel="stylesheet" href="signup.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="navbar">
+        <div class="logo">MITS Alumni Connect</div>
+        <div class="menu">
+            <a href="index3.html">Home</a>
+            <a href="signup.html" id="signupBtn">Sign Up</a>
+            <a href="login.html" id="loginBtn">Login</a>
+            <a href="contact2.html">Contact</a>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Create Your Account</h2>
+            
+            <!-- Role Selection -->
+            <div class="role-selection">
+                <button class="role-btn active" onclick="setRole('alumni')">Alumni</button>
+                <button class="role-btn" onclick="setRole('student')">Student</button>
+            </div>
+
+            <form id="signup-form">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="input-group extra-field" id="graduation-year">
+                    <input type="text" id="grad-year">
+                    <label for="grad-year">Passout Year</label>
+                </div>
+
+                <div class="input-group extra-field" id="department">
+                    <input type="text" id="dept">
+                    <label for="dept">Department</label>
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+            <div class="social-login">
+                <p>Or sign up with</p>
+                <button class="google-btn">Sign up with Google</button>
+                <button class="linkedin-btn">Sign up with LinkedIn</button>
+            </div>
+
+            <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

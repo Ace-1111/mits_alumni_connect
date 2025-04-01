@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Alumni Connect</title>
+    <link rel="stylesheet" href="contribute.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">MITS Alumni Connect</div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#events">Events</a></li>
+               <!-- <li><a href="#jobs">Jobs</a></li> -->
+                <li><a href="#network">Networking</a></li>
+                <li><a href="#donate">Contribute</a></li>
+                <li><a href="#" class="btn-profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    </div>
+
+    <!-- Motivational Banner -->
+    <section class="donation-banner">
+        <h1>Empower the Future with Your Contribution</h1>
+        <p>Your support helps us provide scholarships, upgrade facilities, and organize impactful programs for students.
+        </p>
+        <a href="#donate-section" class="btn">Contribute Now</a>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <h2>Your Contribution Make a Difference</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <img src="scholar.jpeg" alt="Scholarship">
+                <h3>Scholarships for Deserving Students</h3>
+                <p>Every contribution funds one student's tuition for a semester.</p>
+            </div>
+            <div class="impact-card">
+                <img src="lab.webp" alt="Labs">
+                <h3>Modern Lab & Infrastructure</h3>
+                <p>Help us build world-class research facilities for future innovators.</p>
+            </div>
+            <div class="impact-card">
+                <img src="events.png" alt="Events">
+                <h3>Alumni Engagement & Career Fairs</h3>
+                <p>Facilitate career opportunities for fresh graduates through networking events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate-section" class="donation-box">
+        <h2>Support Your Alma Mater</h2>
+        <div class="donation-options">
+            <button class="donate-btn active" onclick="setDonation('one-time')">One-Time</button>
+            <button class="donate-btn" onclick="setDonation('monthly')">Monthly</button>
+            <button class="donate-btn" onclick="setDonation('custom')">Custom</button>
+        </div>
+
+        <div class="amount-selection">
+            <input type="number" id="donation-amount" placeholder="Enter Amount (₹)">
+            <button class="btn">Proceed to Donate</button>
+        </div>
+
+        <p>Secure Payment Options:</p>
+        <div class="payment-icons">
+            <img src="gpay.jpeg"alt="Google Pay">
+            <img src="ppe.png"alt="Phone Pe">
+            <img src="pappl.png"alt="PayPal">
+            <img src="mastrcard.png"alt="Credit Card">
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <h2>What Our Alumni Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Giving back to my college has been one of the most fulfilling experiences. My small contribution
+                    helped build a new AI lab!"</p>
+                <h4>- Ankit Sharma, Class of 2015</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Contributing to our alma mater ensures future generations get access to better opportunities."</p>
+                <h4>- Priya Verma, Class of 2012</h4>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

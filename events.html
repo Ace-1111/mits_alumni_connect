@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Reunions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #66b6d879;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgb(246, 244, 244);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .event {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .event h2 {
+            margin: 0;
+            color: #333;
+        }
+        .event p {
+            color: #555;
+        }
+        .register-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(23, 22, 22, 0.552);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.navbar div{
+    color: gold;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+      <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">MITS Alumni Connect</div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Dashboard</a></li>
+                <li><a href="#events">Events</a></li>
+               <!-- <li><a href="#jobs">Jobs</a></li> -->
+                <li><a href="#network">Networking</a></li>
+                <li><a href="#donate">Contribute</a></li>
+                <li><a href="#" class="btn-profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <div class="container" >
+        <h1>Upcoming Events & Reunions</h1>
+        <div id="events"></div>
+    </div>
+
+    <script>
+        const events = [
+            {
+                title: "Alumni Reunion 2025",
+                date: "March 15, 2025",
+                description: "Join us for a grand alumni reunion to reconnect with friends and faculty!",
+            },
+            {
+                title: "Tech Networking Meetup",
+                date: "April 10, 2025",
+                description: "An exclusive networking session for alumni in the tech industry.",
+            }
+        ];
+
+        const eventsContainer = document.getElementById("events");
+
+        events.forEach(event => {
+            const eventElement = document.createElement("div");
+            eventElement.classList.add("event");
+            eventElement.innerHTML = `
+                <h2>${event.title}</h2>
+                <p><strong>Date:</strong> ${event.date}</p>
+                <p>${event.description}</p>
+                <button class="register-btn">Register</button>
+            `;
+            eventsContainer.appendChild(eventElement);
+        });
+    </script>
+</body>
+</html>

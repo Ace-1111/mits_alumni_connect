@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dd9acc, #a5c5d9);
+    color: white;
+    text-align: center;
+}
+
+
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(23, 22, 22, 0.929);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.navbar div{
+    color: gold;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Banner */
+.donation-banner {
+    padding: 80px 20px;
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-banner h1{
+    color: #353735;
+}
+
+.btn {
+    background: #1dba08;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 50px 20px;
+}
+
+.impact-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.21);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.impact-card h3{
+    color: rgb(86, 75, 61);
+}
+
+.impact-card img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+/* Donation Section */
+.donation-box {
+    padding: 50px 20px;
+}
+
+.donation-options {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.donate-btn {
+    background: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donate-btn.active {
+    background: #04bc6a;
+    color: white;
+}
+
+.amount-selection {
+    margin-top: 15px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin: 10px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+
+.testimonial {
+    max-width: 600px;
+    color: #3d422b;
+    margin: auto;
+}
+
+.testimonial-section h2{
+    color: black;
+}
+
+.testimonial-section h4{
+    color: rgb(45, 44, 44);
+}

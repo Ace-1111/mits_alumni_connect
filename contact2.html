@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect - Contact Form</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: rgba(255, 255, 255, 0.963);
+            color: white;
+            background: url('clg5.jpg') no-repeat center center/cover;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px 50px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color:gold; 
+            text-shadow: 0px 0px 10px gold , 0px 0px 20px orange;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: gold ;
+        }
+
+        .contact-form {
+            background-color: #ffffff51;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            margin: 100px auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #0e0e0e;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        
+            font-weight: bold;
+            color: #110202;
+            text-align: left;
+        }
+        
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="date"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #fbf8f8;
+            background-color: #e6eaf061;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #6a11cb;
+            box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+            outline: none;
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+        
+        .contact-form input[type="submit"] {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        
+        .contact-form input[type="submit"]:hover {
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            z-index: 1001;
+            backdrop-filter: blur(10px);
+        }
+
+        .dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(255, 215, 0, 0.2);
+            color: gold;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color:gold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">MITS Alumni Connect</div>
+        <div class="menu">
+            <a href="index3.html">Home</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            
+            <a href="contact2.html">Contact</a>
+            <!--<div class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="#" id="signinBtn">Sign in</a>
+                    <a href="#" id="loginBtn">Login</a>
+                    <a href="#" id="PROFILEBTN">Profile</a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    
+    <div class="contact-form">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="POST">
+            
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="query">Your Query:</label>
+            <textarea id="query" name="query" placeholder="Enter your query here..." required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
+
